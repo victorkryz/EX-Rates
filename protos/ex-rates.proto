@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package currates;
+
+// The currency rates service defenition:
+service ExRatesSvc {
+  rpc GetRates (Request) returns (Rates) {}
+}
+
+message Request
+{
+  string currency_code = 1;
+}
+
+message Rates {
+  message Rate {
+    string currency = 1;
+    double value = 2;
+  }
+  repeated Rate entries = 8;
+}
