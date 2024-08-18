@@ -26,7 +26,7 @@ Small Python client/server app that communicates by gRPC protocol
 
 #### Update/generate gRPC code:
 
-For (re)generation of gRPC code integrated into application use ***grpc_tools***.    
+For (re)generation of gRPC code integrated into application use *grpc_tools*.    
 Run it from the project's root directory:
 
 ```
